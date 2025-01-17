@@ -1,0 +1,124 @@
+body {
+    font-family: "Lucida Sans";
+    background-color: #000;
+}
+
+.works {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-bottom: 250px;
+    position: relative;
+}
+
+.works .container-works {
+    width: 1200px;
+    max-width: 100%;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.works .content-works {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.works .header-works {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.works .header-works h3 {
+    font-size: 26px;
+    color: #fff;
+}
+
+.works #gallery-work {
+    position: fixed;
+    width: 385px;
+    height: 280px;
+    transform: translateY(-50%, 50%);
+    z-index: 999;
+    overflow: hidden;
+    pointer-events: none;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+
+.works #work-images {
+    width: 100%;
+    height: calc(280px * 3);
+    display: flex;
+    flex-direction: column;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+
+.works .work-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.works .grid-works {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.works .grid-works .item-work {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 40px 0;
+    border-bottom: 1px solid #fff;
+    opacity: 0.6;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.works .grid-works .item-work .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.works .grid-works .item-work:hover {
+    opacity: 1;
+}
+
+.works .grid-works .item-work h4 {
+    font-size: 26px;
+    line-height: 40px;
+    color: #fff;
+}
